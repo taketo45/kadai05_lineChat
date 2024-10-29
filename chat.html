@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>LINEっぽいApp</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1  class="header">
+    <a id="title">LINEっぽいApp</a>
+    <button id="login">Login</button>
+    <button id="logout" class="hidden">Logout</button>
+  </h1>
+
+  <ul id="messages" class="hidden"></ul>
+  <form autocomplete="off" class="hidden">
+    <input type="text" id="message" class="sendMsg" placeholder="your message...">
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
