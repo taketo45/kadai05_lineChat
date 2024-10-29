@@ -12,7 +12,9 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
+// const to_url = ""; // to_url はmain.jsで定義
 provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
 
 function googleAuthLaterProcess(auth, provider,to_url){
   //Google認証完了後の処理
